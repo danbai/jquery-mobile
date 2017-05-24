@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jquery mobile</title>
+    <link rel="stylesheet" href="jquery.mobile.css">
+    <script src="jquery.js"></script>
+    <script src="jquery.mobile.js"></script>
+</head>
+<body>
+    <div data-role="page" id="pageone">
+        <div data-role="header" data-position="fixed">
+            <h1>欢迎来到我的主页</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#" data-icon="home" class="ui-btn-active ui-state-persist">首页</a></li>
+                    <li><a href="#pagetwo" data-icon="arrow-r">页面二</a></li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="content">
+            <h1>hahaha</h1>
+            <ul data-role="listview" data-inset="true" data-autodividers="true" data-filter="true">
+                <li><a href="#">a1</a></li>
+                <li><a href="#">a2</a></li>
+                <li><a href="#">a3</a></li>
+                <li><a href="#">b1</a></li>
+                <li><a href="#">b1</a></li>
+                <li><a href="#">c1</a></li>
+                <li><a href="#">c1</a></li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-fullscreen="true">
+            <h1>我的页脚</h1>
+        </div>
+    </div>
+    <div data-role="page" id="pagetwo">
+        <div data-role="header">
+            <h1>欢迎来到我的主页</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#pageone" data-icon="home">首页</a></li>
+                    <li><a href="#" data-icon="arrow-r" class="ui-btn-active ui-state-persist">页面二</a></li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="content">
+            <p>页面二</p>
+        </div>
+        <div data-role="footer" data-position="fixed" data-fullscreen="true">
+            <h1>我的页脚</h1>
+        </div>
+    </div>
+</body>
+</html>
